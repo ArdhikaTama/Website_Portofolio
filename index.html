@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ardhika Sisna Tama — Web Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="netflix-intro" class="netflix-container">
+        <div class="netflix-text-wrapper">
+            <span class="n-letter">W</span>
+            <span class="n-letter">E</span>
+            <span class="n-letter">L</span>
+            <span class="n-letter">C</span>
+            <span class="n-letter">O</span>
+            <span class="n-letter">M</span>
+            <span class="n-letter">E</span>
+        </div>
+    </div>
+
+    <div class="noise-overlay"></div>
+    <div class="blob-container">
+        <div class="glow-blob blob-1"></div>
+        <div class="glow-blob blob-2"></div>
+        <div class="glow-blob blob-3"></div>
+    </div>
+
+    <div id="opening-screen" class="opening-fullscreen d-flex flex-column align-items-center justify-content-center">
+        <div class="opening-glow"></div>
+        <div class="text-center z-3 position-relative">
+            <h1 class="opening-title tracking-widest text-uppercase mb-2">Ardhika Sisna Tama</h1>
+            <p class="opening-subtitle tracking-widest text-muted mb-5">CYBER SECURITY</p>
+            <button id="btn-enter" class="btn-premium-enter">
+                <span class="btn-text">[ PRESS TO ENTER ]</span>
+                <span class="ripple"></span>
+            </button>
+        </div>
+    </div>
+
+    <div id="main-wrapper" class="main-content-hidden">
+
+        <nav class="navbar navbar-expand-lg fixed-top premium-nav">
+            <div class="container">
+                <a class="navbar-brand font-space" href="#">TamsDik</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto font-space">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="hero" class="hero-section d-flex align-items-center min-vh-100 position-relative overflow-hidden">
+            <div class="container z-2">
+                <div class="row align-items-center min-vh-100 py-5">
+                    <div class="col-lg-7 text-start content-col">
+                        <span class="hero-intro d-block font-space text-primary mb-2">Hi,</span>
+                        <span class="hero-im d-block text-muted mb-1">I'm</span>
+                        <h2 class="hero-name display-2 fw-extrabold text-white text-reveal">Ardhika Sisna Tama</h2>
+                        <h3 class="hero-title h2 text-gradient font-space mb-4"><span id="typed-text"></span></h3>
+                        <p class="hero-desc text-muted lead mb-5 max-w-xl">
+                            Cyber Security enthusiast focused on Linux, Network Pentesting, Web Pentesting, and Bug Bounty Hunting. Passionate about discovering vulnerabilities, learning offensive security techniques, and continuously improving practical cybersecurity skills through hands-on labs and challenges.
+                        </p>
+                        <div class="hero-btn-group">
+                            <a href="#projects" class="btn btn-primary-premium me-3">View Projects</a>
+                            <a href="#contact" class="btn btn-outline-premium">Let's Talk</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 position-relative d-flex justify-content-center align-items-center mt-5 mt-lg-0 target-parallax">
+                        <div class="profile-wrapper">
+                            <div class="profile-glow"></div>
+                            <div class="profile-avatar" style="background-image: url('saya.jpeg'); cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageViewerModal"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-5 section-padding">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title font-space">About Me</h2>
+                    <p class="text-muted">A glimpse into my ecosystem</p>
+                </div>
+                <div class="bento-grid">
+                    <div class="bento-item bento-lg about-card-1">
+                        <h3 class="h4 text-white mb-3">Philosophy</h3>
+                        <p class="text-muted">I believe cybersecurity is not only about breaking systems, but understanding how they work, identifying weaknesses, and helping build stronger defenses.</p>
+                    </div>
+                    <div class="bento-item bento-md about-card-2 d-flex flex-column justify-content-between">
+                        <h3 class="h4 text-white">Current Focus</h3>
+                        <div class="focus-tag text-accent font-space">
+                            • Linux <br>
+                            • Web Pentest <br>
+                            • Bug Bounty <br>
+                            • Network Pentest
+                        </div>
+                    </div>
+                    <div class="bento-item bento-md about-card-3 d-flex flex-column justify-content-between">
+                        <h3 class="h4 text-white">Based In</h3>
+                        <div class="location-text"><i class="bi bi-geo-alt-fill text-primary me-2"></i>Indonesia</div>
+                    </div>
+                    <div class="bento-item bento-lg about-card-4">
+                        <h3 class="h4 text-white mb-3">The Stack Mindset</h3>
+                        <p class="text-muted">Building a strong foundation in Linux, web application security, ethical hacking, and bug bounty methodologies through continuous hands-on practice.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-5 section-padding">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title font-space">Skills</h2>
+                    <p class="text-muted">Core technologies and domains I focus on in my cybersecurity journey.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4 skill-card-wrapper">
+                        <div class="skill-card d-flex flex-column justify-content-between h-100">
+                            <div>
+                                <div class="skill-icon"><i class="bi bi-terminal-fill"></i></div>
+                                <h3 class="h5 text-white my-3">Linux</h3>
+                                <div class="text-xs text-muted mb-4 lh-lg">
+                                    • Networking <br>
+                                    • Permissions <br>
+                                    • File Systems <br>
+                                    • Process Management
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 skill-card-wrapper">
+                        <div class="skill-card d-flex flex-column justify-content-between h-100">
+                            <div>
+                                <div class="skill-icon"><i class="bi bi-shield-lock-fill"></i></div>
+                                <h3 class="h5 text-white my-3">Web Pentesting</h3>
+                                <div class="text-xs text-muted mb-4 lh-lg">
+                                    • Burp Suite <br>
+                                    • OWASP Top 10 <br>
+                                    • Reconnaissance <br>
+                                    • Authorization Testing
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 skill-card-wrapper">
+                        <div class="skill-card d-flex flex-column justify-content-between h-100">
+                            <div>
+                                <div class="skill-icon"><i class="bi bi-incognito"></i></div>
+                                <h3 class="h5 text-white my-3">Network Pentesting</h3>
+                                <div class="text-xs text-muted mb-4 lh-lg">
+                                    • Nmap <br>
+                                    • Wireshark
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-5 section-padding">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title font-space">Projects</h2>
+                    <p class="text-muted">Personal projects and practical experiences focused on Linux, web security, and bug bounty methodologies.</p>
+                </div>
+                <div class="row g-5">
+                    <div class="col-12 project-reveal-row">
+                        <div class="project-card row g-0 align-items-center">
+                            <div class="col-lg-6 overflow-hidden">
+                                <div class="project-img" style="background-image: url('omni.png');"></div>
+                            </div>
+                            <div class="col-lg-6 p-4 p-md-5">
+                                <div class="d-flex gap-2 mb-3">
+                                    <span class="tech-badge">Python</span>
+                                    <span class="tech-badge">Subdomain</span>
+                                    <span class="tech-badge">Enumeration</span>
+                                </div>
+                                <h3 class="h3 text-white mb-3">OmniSub</h3>
+                                <p class="text-muted mb-4">Developing a Python-based subdomain enumeration tool for bug bounty reconnaissance, featuring passive enumeration, DNS validation, cloud detection, and automated reporting.</p>
+                                <a href="#" class="btn-project-link">Explore Case Study <i class="bi bi-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- EXPERIENCE / EDUCATION SECTION -->
+        <section id="experience" class="py-5 section-padding">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title font-space">Journey</h2>
+                    <p class="text-muted">Educational history and academic journey</p>
+                </div>
+                <div class="timeline-container position-relative mx-auto max-w-2xl">
+                    <div class="timeline-line"></div>
+
+                    <!-- 1. UNIVERSITAS (Terbaru) -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date font-space text-primary">2024 - Present</span>
+                            <h4 class="text-white mt-1 mb-2">Universitas Budi Luhur</h4>
+                            <p class="text-accent text-sm mb-2">S1 - Teknik Informatika</p>
+                        </div>
+                    </div>
+
+                    <!-- 2. SMA -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date font-space text-secondary">2021 — 2024</span>
+                            <h4 class="text-white mt-1 mb-2">SMA Negeri 6 Tangerang</h4>
+                            <p class="text-accent text-sm mb-2">MIPA</p>
+                        </div>
+                    </div>
+
+                    <!-- 3. SMP -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date font-space text-muted">2017 — 2020</span>
+                            <h4 class="text-white mt-1 mb-2">SMP Negeri 2 Tangerang</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5 section-padding position-relative overflow-hidden">
+            <div class="aurora-glow"></div>
+            <div class="container position-relative z-2">
+                <div class="text-center mb-5 max-w-xl mx-auto">
+                    <h2 class="contact-heading display-4 fw-bold text-white mb-4">Let's Build Something Amazing Together</h2>
+                </div>
+                <div class="row g-3 justify-content-center">
+                    
+                    <div class="col-6 col-md-4 col-lg-2 social-wrapper">
+                        <a href="mailto:tamaardhika8@gmail.com" class="social-card" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-envelope-fill fs-3 text-primary mb-2"></i>
+                            <span class="d-block font-space text-xs">Email</span>
+                        </a>
+                    </div>
+                    
+                    <div class="col-6 col-md-4 col-lg-2 social-wrapper">
+                        <a href="https://github.com/ArdhikaTama" class="social-card" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-github fs-3 text-white mb-2"></i>
+                            <span class="d-block font-space text-xs">GitHub</span>
+                        </a>
+                    </div>
+                    
+                    <div class="col-6 col-md-4 col-lg-2 social-wrapper">
+                        <a href="https://instagram.com/dikatamaaaa" class="social-card" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-instagram fs-3 text-accent mb-2"></i>
+                            <span class="d-block font-space text-xs">Instagram</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="premium-footer position-relative z-2">
+            <div class="container">
+                <hr class="footer-divider">
+                <div class="row py-4 align-items-center justify-content-between font-space">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <span class="copyright-text">© 2026 ARDHIKA SISNA TAMA. ALL RIGHTS RESERVED.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <button id="btn-back-to-top" class="btn-footer-top">
+                            BACK TO TOP <i class="bi bi-arrow-up ms-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal fade" id="imageViewerModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content text-center" style="background: transparent; border: none;">
+                <div class="position-relative d-inline-block mx-auto">
+                    <img src="saya.jpeg" class="img-fluid rounded-4 shadow-lg" style="max-height: 80vh; border: 1px solid rgba(255,255,255,0.15);" alt="Ardhika Sisna Tama Profile">
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
